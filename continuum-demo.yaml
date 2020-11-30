@@ -5,8 +5,8 @@ spec:
 - directory: Continuum Integration
   children:
   - template: Continuum Configuration
-    scheduledStartDate: 2020-11-30T12:11:36.549Z
-    dueDate: 2020-11-30T13:11:36.552Z
+    scheduledStartDate: 2020-11-30T12:40:22.575Z
+    dueDate: 2020-11-30T13:40:22.577Z
     phases:
     - phase: Configuration
       tasks:
@@ -46,8 +46,9 @@ spec:
         type: xlrelease.GateTask
     riskProfile: Default risk profile
   - template: Runtime Continuum Integration
-    scheduledStartDate: 2020-11-30T12:11:38.525Z
-    dueDate: 2020-11-30T13:11:38.525Z
+    description: Runs a sample pipeline in Continuum
+    scheduledStartDate: 2020-11-30T12:40:23.776Z
+    dueDate: 2020-11-30T13:40:23.776Z
     phases:
     - phase: Continuum
       tasks:
