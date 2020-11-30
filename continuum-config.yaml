@@ -1,0 +1,25 @@
+---
+apiVersion: xl-release/v1
+kind: Templates
+spec:
+- directory: Continuum Integration
+- directory: Samples & Tutorials
+- name: Continuum
+  type: continuum.ContinuumServer
+  url: http://demo.v1testdrive.com
+  apiToken: !value "continuum_ContinuumServer_Continuum_apiToken"
+- name: GitHub
+  type: github.Server
+  clientId: Hes-Siemelink
+  clientSecret: !value "github_Server_GitHub_clientSecret"
+- name: GitHub xl-release
+  type: git.Repository
+  url: https://github.com/xebialabs/xl-release.git
+  authenticationMethod: PAT
+  username: Hes-Siemelink
+  password: !value "git_Repository_GitHub_xl_release_password"
+- name: Jira Server
+  type: jira.Server
+  url: https://digitalai.atlassian.net
+  username: xlr-jira-testuser@xebialabs.com
+  password: !value "jira_Server_Jira_Server_password"
