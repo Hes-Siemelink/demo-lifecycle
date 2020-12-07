@@ -5,8 +5,8 @@ spec:
 - directory: Continuum Integration
   children:
   - template: Continuum Configuration
-    scheduledStartDate: 2020-11-30T12:40:22.575Z
-    dueDate: 2020-11-30T13:40:22.577Z
+    scheduledStartDate: 2020-12-07T11:23:43.356Z
+    dueDate: 2020-12-07T12:23:43.357Z
     phases:
     - phase: Configuration
       tasks:
@@ -42,13 +42,15 @@ spec:
         ^description: Source repository for Digital.ai Release
         taskFailureHandlerEnabled: true
         taskRecoverOp: SKIP_TASK
+    - phase: Test
+      tasks:
       - name: OK?
         type: xlrelease.GateTask
+      color: '#0079BC'
     riskProfile: Default risk profile
   - template: Runtime Continuum Integration
-    description: Runs a sample pipeline in Continuum
-    scheduledStartDate: 2020-11-30T12:40:23.776Z
-    dueDate: 2020-11-30T13:40:23.776Z
+    scheduledStartDate: 2020-12-07T11:23:44.225Z
+    dueDate: 2020-12-07T12:23:44.225Z
     phases:
     - phase: Continuum
       tasks:
